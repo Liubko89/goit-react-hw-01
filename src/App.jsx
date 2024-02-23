@@ -1,18 +1,19 @@
 import "./App.css";
 import Profile from "./components/Profile/Profile";
+import userData from "./userData.json";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <>
       <Profile
-        image={"/src/img/ava.jpg"}
-        name={"Libomyr Romanyshyn"}
-        tag={"Lucky"}
-        location={"Faro, Portugal"}
-        stats={{ followers: 1000, views: 1500, likes: 750 }}
-      ></Profile>
-    </div>
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+    </>
   );
-}
+};
 
 export default App;
