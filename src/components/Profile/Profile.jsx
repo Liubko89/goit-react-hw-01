@@ -20,18 +20,18 @@ function Profile({
         <p className={css.tag}>{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
-      <ul>
-        <li>
+      <ul className={css.statsList}>
+        <li className={css.statsItem}>
           <span>Followers</span>
-          <span>{followers}</span>
+          <span className={css.statsItemValue}>{followers}</span>
         </li>
-        <li>
+        <li className={css.statsItem}>
           <span>Views</span>
-          <span>{views}</span>
+          <span className={css.statsItemValue}>{views}</span>
         </li>
-        <li>
+        <li className={css.statsItem}>
           <span>Likes</span>
-          <span>{likes}</span>
+          <span className={css.statsItemValue}>{likes}</span>
         </li>
       </ul>
     </div>
