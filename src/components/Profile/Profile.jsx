@@ -1,4 +1,4 @@
-
+import css from "./Profile.module.css";
 
 function Profile({
   name,
@@ -8,12 +8,17 @@ function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt={tag} width={300} />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+    <div className={css.profileContainer}>
+      <div className={css.imageContainer}>
+        <img
+          className={css.imageContainerImage}
+          src={image}
+          alt={tag}
+          width={300}
+        />
+        <p className={css.name}>{name}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
       <ul>
         <li>
