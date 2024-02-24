@@ -21,7 +21,6 @@
 td:first-child {
   text-align: start;
   text-transform: capitalize;
-  padding-left: 80px;
 }
 
 .tr:nth-child(even) {

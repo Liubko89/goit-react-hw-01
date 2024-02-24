@@ -13,7 +13,7 @@ function Profile({
         <img
           className={css.imageContainerImage}
           src={image}
-          alt={tag}
+          alt={name}
           width={300}
         />
         <p className={css.name}>{name}</p>
